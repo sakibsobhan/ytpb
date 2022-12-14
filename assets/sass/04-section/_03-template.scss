@@ -1,0 +1,15 @@
+#template-part{
+    margin-top: 60px;
+    .marquee {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        gap: 20px;
+        @media (max-width: 991px) {
+            gap: 10px;
+        }
+        @media (max-width: 575px) {
+            gap: 5px;
+        }
+      }      
+}

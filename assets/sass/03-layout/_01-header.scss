@@ -1,0 +1,96 @@
+header {
+  margin-top: 20px;
+  @media (max-width: 991px) {
+      margin-top: 0;
+  }
+  .navbar {
+    padding: 20px 0;
+    .navbar-brand {
+      padding: 0;
+    }
+    .navbar-nav {
+      gap: 32px;
+      @media (max-width: 991px) {
+         gap: 0;
+      }
+      .nav-link {
+        color: $white;
+        font-size: 18px;
+        transition: 0.4s;
+        &:hover {
+          color: $c1;
+        }
+      }
+    }
+    .user-access-btn {
+      gap: 10px;
+      @media (max-width: 991px){
+        margin-top: 10px;
+      }
+      a {
+        transition: 0.4s;
+        display: flex;
+        &:hover {
+          color: $c1;
+          svg {
+            path {
+              fill: $c1;
+            }
+          }
+        }
+        svg {
+          margin-right: 8px;
+          path {
+            transition: 0.4s;
+          }
+        }
+      }
+      .login {
+        border-radius: 5px;
+        height: 42px;
+        padding-inline: 20px;
+        line-height: 42px;
+         @media (max-width: 991px) {
+            border: 1px solid $white;
+         }
+      }
+      .signup {
+        background: $c1;
+        border-radius: 5px;
+        height: 42px;
+        padding-inline: 20px;
+        line-height: 42px;
+        transition: 0.4s;
+        &:hover {
+          background: $white;
+        }
+      }
+    }
+    .navbar-toggler {
+      padding: 0;
+    }
+  }
+  @media (max-width: 991px) {
+   .navbar-collapse.collapse.show {
+      padding: 30px 0;
+      transition: 0s !important;
+    }
+    .collapsing {
+      height: unset;
+      overflow: unset;
+      padding: 30px 0;
+      transition: 0s !important;
+    }
+  }
+  .navScrolled {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: $body_bg;
+    transition: 0.2s;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 15px 0;
+  }
+}

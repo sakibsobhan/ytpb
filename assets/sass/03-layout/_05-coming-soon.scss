@@ -1,0 +1,56 @@
+/* ************************
+   03.5: Coming Soon
+   ********************* */
+
+   .coming-soon-content {
+      h1 {
+         font-size: 72px;
+         margin-bottom: 27px;
+      }
+
+      p {
+         font-size: 18px;
+      }
+
+      @include mobileLg {
+         br {
+            display: none;
+         }
+      }
+      h5 {
+         margin-bottom: 40px;
+      }
+   }
+
+   #countdown {
+      max-width: 648px;
+      margin: 34px auto 8px;
+      @include mobileMd {
+         display: flex;
+         flex-wrap: wrap;
+      }
+      li {
+         margin-bottom: 40px;
+         &.separator {
+            width: 1px;
+            height: 30px;
+            background-color: rgba(255, 255, 255, .5);
+         }
+         @include mobileMd {
+            flex: 1 1 50%;
+            &.separator {
+               display: none;
+            }
+         }
+      }
+      .single-countdown {
+         h2 {
+            font-size: 60px;
+         }
+         span {
+            @extend %title-font;
+            font-size: 18px;
+            text-transform: uppercase;
+         }
+      }
+   }

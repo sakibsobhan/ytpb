@@ -1,0 +1,67 @@
+/* ************************
+   02.5: Buttons
+   ********************* */
+
+   .btn {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: var(--white);
+      @extend %medium;
+      @extend %trans3;
+      font-family: var(--title-font);
+      @extend %radius-50;
+      line-height: 1;
+      padding: 15px 29px;
+      @extend %shadow-none;
+      outline: none;
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
+      @extend %btn-bg;
+      border: none;
+      background-size: 200% 100%;
+      > svg, > i, > img {
+         margin-right: 7px;
+      }
+      &:focus {
+         @extend %shadow-none;
+      }
+      &:hover {
+         color: var(--white);
+         background-position: 100% 0;
+      }
+
+
+      &-link {
+         padding: 0;
+         background: transparent;
+         text-decoration: none;
+         svg {
+            path {
+               @extend %trans3;
+            }
+         }
+         &:hover {
+            color: var(--c1);
+            text-decoration: underline;
+            svg {
+               path {
+                  fill: var(--c1);
+               }
+            }
+         }
+      }
+   }
+
+   //Button Circle
+   .btn-circle {
+      width: 35px;
+      height: 35px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      background-color: var(--white);
+      @extend %radius;
+      color: var(--c1);
+   }
